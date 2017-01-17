@@ -1,0 +1,17 @@
+[package]
+name = "grafaman"
+version = "0.1.0"
+authors = ["Zhiltsov Dmitriy Andreevich <dmitriy.zhiltsov@lamoda.ru>"]
+
+[dependencies]
+rocket = "0.1.4"
+rocket_codegen = "0.1.4"
+telegram-bot = "0.4"
+serde = "*"
+serde_json = "*"
+serde_derive = "*"
+lazy_static = "*"
+
+[dependencies.rocket_contrib]
+default-features = false
+features = ["json"]
