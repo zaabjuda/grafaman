@@ -5,3 +5,9 @@ install:
 
 build:
 	cargo build --release
+
+output_release:
+	cp target/release/grafaman ../build/grafaman
+
+make_docker:
+	docker build --force-rm -t grafaman .
